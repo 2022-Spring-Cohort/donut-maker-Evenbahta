@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Even's Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <div>
-   <img src="img/donut.jpg"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </div>
+    <link rel="stylesheet"  href="./style.css">
 
-
-    <section class="donut_maker">
-      <div id="counter" class="donut_counter"></div>
-      <div class="autoclickercount"></div>
-      <div class="multipiercount"></div>
-      <div class="autoclickercost"></div>
-      <div class="multiplycost"></div>
-  </section>
+    <title>Donut Maker</title>
+</head>
+<body>
+    <!-- Header -->
+    <heeader class="nav">
+        <div class="nav-logo">
+            <div class="nav-logo__Image">
+                <img src="./Image/logo.png" alt="donut-logo" class="nav-logo__Image--img"/>
+            </div>
+            <div class="nav-logo__text">
+                <span>Fred <br>Baker</span>
+           </div>
+        </div>
+        
+        <div class="nav-list">
+            <a href="./index.html" class="nav-list__link">Home</a>
+          </div>
+        <div class="nav-list">
+          <a  href="./inspiration.html" class="nav-list__link">Inspiration</a>
+        </div>
+        <div class="nav-list">
+         <a  href="./contact.html" class="nav-list__link">Contact</a>
+        </div>
     
-
-    <div>
-    <button class="autoClickerButton"> Donut Auto Clicker</button>
-    <button class="donutMultiplierButton"> Donut Multiplier</button>
-    <button class="reset"> RESET </button>
-    <div>
-
-
-    <script src="/index.js"></script>
-    <script src="/Donut.js"></script>
-    <script src="/Edit.js"></script>
-  </body>
+    </heeader>
+  <section class="donuts">
+     <div class="donuts-info">
+         <h2 class="donuts-info__header">Description</h2>
+        
+         <nav>
+           <li>Click on "buy donuts" button to buy currency </li>
+           <li>100 donuts requred to buy auto clicker</li>
+           <li>10 donuts required to buy donuts Multiplier</li>
+         </nav>
+     </div> 
+     <div class="donuts-game">
+      <div class="donuts-game__currency">
+          <div > <span class="donuts-game__currency-total">0</span> Donuts</div>
+          <div class="donuts-game__currenct-image">
+              <img src="./Image/download-removebg-preview.png" alt="donut" />
+          </div>
+        <button class="donuts-game__button">Buy Donuts</button>  
+      </div>
+      <div class="donuts-game__purchashed">
+        <button class="reset">Reset</button>
+        <div class="donuts-game__purchased-autoClicker">
+          <div>
+              <span >Price of Auto cliker</span>
+          </div>
+          <div>
+             <p> <span class="donuts-game__purchased-price">100</span> Donuts</p>
+          </div>
+          <div>
+              <button class="button button-autoclicker">
+                Purchase Auto Clicker
+              </button>
+          </div>
+          <div>
+              <p>Total Purchase <span class="donuts-game__purchashed-result">0</span></p>
+          </div>
+        </div>
+        <div class="donuts-game__purchased-multiplier">
+          <div>
+            <span>Price of Multiplier</span>
+        </div>
+        <div>
+           <p > <span class="Multiplier-price">10</span> Donuts</p>
+        </div>
+        <div>
+            <button class="multiplier-button">Purchase Multiplier</button>
+        </div>
+        <div>
+            <p>Total Purchase <span class="total-multiplier">0</span> </p>
+            
+        </div>
+        </div>
+      </div>
+      
+     </div> 
+  </section>
+    <script src="script.js"></script>
+</body>
 </html>
